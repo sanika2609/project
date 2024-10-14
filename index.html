@@ -9,9 +9,33 @@
 <body>
     <div class="quiz-container">
         <h1>Quiz Application</h1>
-        <div id="quiz"></div>
-        <button id="submit">Submit Answers</button>
-        <div id="result"></div>
+
+        <!-- Login Form -->
+        <div id="login" class="form-container visible">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label><br>
+                <input type="text" id="loginUsername" required><br><br>
+                <input type="submit" value="Login">
+            </form>
+            <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
+        </div>
+
+        <!-- Signup Form -->
+        <div id="signup" class="form-container hidden">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupUsername">Username:</label><br>
+                <input type="text" id="signupUsername" required><br><br>
+                <input type="submit" value="Sign Up">
+            </form>
+            <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz" class="hidden"></div>
+        <button id="submit" class="hidden">Submit Answers</button>
+        <div id="result" class="hidden"></div>
     </div>
 
     <script src="script.js"></script>
